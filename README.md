@@ -11,3 +11,6 @@ Turn on the Moesif CORS plug-in on your webbrowser You will be able to find this
 Launch the application by opening the index.html file
 
 Importantly, on the Movies-page when searching for all the movies or sorting by a specific character, it takes some time to precess the query and display the results
+
+
+To watch a full run through of the application please go to: https://youtu.be/DT_fHDITtP8
