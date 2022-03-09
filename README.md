@@ -1,6 +1,6 @@
 # MarvelOntologyProject
 
-Unzip the GROUP_23.zip file
+Unzip the zip file
 
 Open graphDB and create a new repository called "Marvel" using the OWL-MAX(optimized) ruleset.
 
