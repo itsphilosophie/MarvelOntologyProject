@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html ng-App="KRRclass" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Actors</title>
+        <!-- Font -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="freelancer/css/styles.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <!-- Fonts CSS-->
+        <link rel="stylesheet" href="freelancer/css/heading.css">
+        <link rel="stylesheet" href="freelancer/css/body.css">
+
+        <!--        links for search dropdown-->
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <!-- Popper Js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <!-- Hierarchy Select CSS -->
+        <link rel="stylesheet" href="bootstrap/css/hierarchy-select.min.css">
+
+        <!-- Hierarchy Select Js -->
+        <script src="bootstrap/js/hierarchy-select.min.js"></script>
+
+
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<style>
+	#extra {
+	font-size: 22px;
+	}
+	</style>
+
+    </head>
+    <body  ng-controller="MainCtrl" id="page-top">
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
+            <div class="container"><a class="navbar-brand js-scroll-trigger" href="index.html"><img alt="Brand" src="images/MarvelLogo.svg" style="width:90px"></a>
+                <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="movies.html">Movies</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="characters.html">Characters</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="actors.html">Actors</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div><img class="w-25 img-fluid rounded mx-auto d-block" src="images/974155.png" alt="Movies" style="padding-top: 100px"/></div>
+			<h6 class="text-center">Actors</h6>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+        </div>
+
+        <form>
+        <fieldset class="form-group">
+			<div class="container">
+				<div class="form-group row">
+					<h2>Actor search</h2>
+				</div>
+
+	<div class="card card-body">
+		<div><h6> Choose the name of the actor from the list to see more information about click "Search"</h6>
+			<select required id="actors" ng-model="actor" class="form-control">
+				<option value="">All actors</option>
+				<option value="marvel:Aaron_TaylorJohnson">Aaron Taylor-Johnson</option>
+				<option value="marvel:Angela_Bassett">Angela Bassett</option>
+				<option value="marvel:Anthony_Hopkins">Anthony Hopkins</option>
+				<option value="marvel:Anthony_Mackie">Anthony Mackie</option>
+				<option value="marvel:Ben_Mendelsohn">Ben Mendelsohn</option>
+				<option value="marvel:Benedict_Cumberbatch">Benedict Cumberbatch</option>
+				<option value="marvel:Benedict_Wong">Benedict Wong</option>
+				<option value="marvel:Brie_Larson">Brie Larson</option>
+				<option value="marvel:Bruno_Ricci">Bruno Ricci</option>
+				<option value="marvel:Cate_Blanchett">Cate Blanchett</option>
+				<option value="marvel:Chadwick_Boseman">Chadwick Boseman</option>
+				<option value="marvel:Chris_Evans">Chris Evans</option>
+				<option value="marvel:Chris_Hemsworth">Chris Hemsworth</option>
+				<option value="marvel:Chris_Pratt">Chris Pratt</option>
+				<option value="marvel:Clark_Gregg">Clark Gregg</option>
+				<option value="marvel:Danai_Gurira">Danai Gurira</option>
+				<option value="marvel:Daniel_Brühl">Daniel Brühl</option>
+				<option value="marvel:Dave_Bautista">Dave Bautista</option>
+				<option value="marvel:Derek_Luke">Derek Luke</option>
+				<option value="marvel:Elizabeth_Olsen">Elizabeth Olsen</option>
+				<option value="marvel:Emily_Van_Camp">Emily Van Camp</option>
+				<option value="marvel:Frank_Grillo">Frank Grillo</option>
+				<option value="marvel:Gerard_Sanders">Gerard Sanders</option>
+				<option value="marvel:Gwyneth_Paltrow">Gwyneth Paltrow</option>
+				<option value="marvel:Idris_Elba">Idris Elba</option>
+				<option value="marvel:JJ_Feild">JJ Feild</option>
+				<option value="marvel:Jaimie_Alexander">Jaimie Alexander</option>
+				<option value="marvel:Jeff_Bridges">Jeff Bridges</option>
+				<option value="marvel:Jeremy_Renner">Jeremy Renner</option>
+				<option value="marvel:Karen_Gillan">Karen Gillan</option>
+				<option value="marvel:Kenneth_Choi">Kenneth Choi</option>
+				<option value="marvel:Krystian_Godlewski">Krystian Godlewski</option>
+				<option value="marvel:Kurt_Russell">Kurt Russell</option>
+				<option value="marvel:Mark_Ruffalo">Mark Ruffalo</option>
+				<option value="marvel:Maximiliano_Hernández">Maximiliano Hernández</option>
+				<option value="marvel:Michael_B_Jordan">Michael B. Jordan</option>
+				<option value="marvel:Michael_Douglas">Michael Douglas</option>
+				<option value="marvel:Michael_Peña">Michael Peña</option>
+				<option value="marvel:Michelle_Pfeiffer">Michelle Pfeiffer</option>
+				<option value="marvel:Natalie_Portman">Natalie Portman</option>
+				<option value="marvel:Neal_McDonough">Neal McDonough</option>
+				<option value="marvel:Paul_Bettany">Paul Bettany</option>
+				<option value="marvel:Paul_Rudd">Paul Rudd</option>
+				<option value="marvel:PomKlementieff">Pom Klementieff</option>
+				<option value="marvel:Pom_Klementieff">Pom Klementieff</option>
+				<option value="marvel:Ray_Stevenson">Ray Stevenson</option>
+				<option value="marvel:Rene_Russo">Rene Russo</option>
+				<option value="marvel:Robert_DowneyJr">Robert Downey Jr.</option>
+				<option value="marvel:Robert_Redford">Robert Redford</option>
+				<option value="marvel:Samuel_L._Jackson">Samuel L. Jackson</option>
+				<option value="marvel:Samuel_LJackson">Samuel L. Jackson</option>
+				<option value="marvel:Scarlett_Johansson">Scarlett Johansson</option>
+				<option value="marvel:Sean_Gunn">Sean Gunn</option>
+				<option value="marvel:Sebastian_Stan">Sebastian Stan</option>
+				<option value="marvel:Tadanobu_Asano">Tadanobu Asano</option>
+				<option value="marvel:Terrence_Howard">Terrence Howard</option>
+				<option value="marvel:Tessa_Thompson">Tessa Thompson</option>
+				<option value="marvel:Tom_Hiddleston">Tom Hiddleston</option>
+				<option value="marvel:Tom_Holland">Tom Holland</option>
+				<option value="marvel:Tom_Vaughan-Lawlor">Tom Vaughan Lawlor</option>
+				<option value="marvel:Tom_VaughanLawlor">Tom Vaughan Lawlor</option>
+				<option value="marvel:Winston_Duke">Winston Duke</option>
+				<option value="marvel:Zachary_Levi">Zachary Levi</option>
+				<option value="marvel:Zoe_Saldana">Zoe Saldana</option>
+				<option value="marvel:ZoeSaldana">Zoe Saldana</option>
+			</select>
+			<br>
+			<div class="text-center"><h2> OR </h2></div>
+			<br>
+			<h6> Search the actors based on the movies and/or their gender and click "Search"</h6>
+			<select required id="movie1" ng-model="movie1" class="form-control">
+				<option value="">All movies</option>
+				<option value="marvel:AntMan">Ant-Man</option>
+				<option value="marvel:AntManAndTheWasp">Ant-Man And The Wasp</option>
+				<option value="marvel:AvengersAgeOfUltron">Avengers Age Of Ultron</option>
+				<option value="marvel:AvengersEndgame">Avengers Endgame</option>
+				<option value="marvel:AvengersInfinityWar">Avengers Infinity War</option>
+				<option value="marvel:BlackPanther">Black Panther</option>
+				<option value="marvel:CaptainAmericaCivilWar">Captain America:Civil War</option>
+				<option value="marvel:CaptainAmericaTheFirstAvenger">Captain America:The First Avenger</option>
+				<option value="marvel:CaptainAmericaTheWinterSoldier">Captain America:The Winter Soldier</option>
+				<option value="marvel:CaptainMarvel">Captain Marvel</option>
+				<option value="marvel:DoctorStrange">Doctor Strange</option>
+				<option value="marvel:GuardiansOfTheGalaxy">Guardians of the Galaxy</option>
+				<option value="marvel:GuardiansOfTheGalaxyVol2">Guardians of the Galaxy Vol.2</option>
+				<option value="marvel:GuardiansOfTheGalaxyVol3">Guardians of the Galaxy Vol.3</option>
+				<option value="marvel:IronMan">Iron Man</option>
+				<option value="marvel:IronMan2">Iron Man 2</option>
+				<option value="marvel:IronMan3">Iron Man 3</option>
+				<option value="marvel:SpiderManFarFromHome">Spider-Man:Far From Home</option>
+				<option value="marvel:SpiderManHomecoming">Spider-Man:Homecoming</option>
+				<option value="marvel:TheAvengers">The Avengers</option>
+				<option value="marvel:TheIncredibleHulk">The Incredible Hulk</option>
+				<option value="marvel:Thor_Movie">Thor</option>
+				<option value="marvel:ThorRagnarok">Thor:Ragnarok</option>
+				<option value="marvel:ThorTheDarkWorld">Thor:The Dark World</option>
+			</select>
+			<br>
+		</div>
+			<div>
+				<div class="row">
+					<legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+					<div class="form-check form-check-inline">
+						<label class="form-check-label" for="inlineCheckbox3">
+							<input class="form-check-input" type="radio" id="inlineCheckbox3" name="gender" value="both" ng-model="gender"  class="form-control" checked="checked">
+							Both</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<label class="form-check-label" for="inlineCheckbox1">
+							<input class="form-check-input" type="radio" id="inlineCheckbox1" name="gender" value="male" ng-model="gender"  class="form-control">
+							Male</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<label class="form-check-label" for="inlineCheckbox2">
+							<input class="form-check-input" type="radio" id="inlineCheckbox2" name="gender" value="female" ng-model="gender"  class="form-control">
+							Female</label>
+					</div>
+				</div>
+			</div>
+		<div class="container mt-5 mb-5"> <!-- This part contains the button to send the requested query.  -->
+			<div class="row">
+				<div class="col-8">
+					<button class="btn" type="button" ng-click="startActors()">Search</button>
+				</div>
+			</div>
+		</div>
+		</div>
+		<br>
+  </fieldset>
+</form>
+
+
+	<div class="container">
+
+				<h2><font color="black" id = "extra">{{myDisplayMessage}}</font></h2>
+				<table class="table table-bordered">
+					<thead class="thead-dark">
+					  <tr>
+						<th scope="col"> Name Actor </th>
+						<th scope="col"> Birthdate </th>
+						<th scope="col"> Gender </th>
+						<th scope="col"> Abstract </th>
+						<th scope="col"> Portrays character </th>
+						<th scope="col"> Movie(s) </th>
+					  </tr>
+					</thead>
+				  <tr ng-repeat="x in FinalData">
+					<td>{{ x.name.value }} </td>
+					<td>{{ x.actor_birthdate.value }}</td>
+					<td>{{ x.gender.value }}</td>
+					<td>{{ x.actor_abstract.value }}</td>
+					<td>{{ x.charactername.value }}</td>
+					<td style="width: 30%"><pre style="font:inherit; white-space:pre-wrap; word-wrap:break-word">{{ x.movietitleexample.value }}</pre></td>
+				  </tr>
+				</table>
+			</div>
+
+
+
+    <!-- JavaScript libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/angular-chart.min.js"></script>
+
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+        <div class="scroll-to-top d-lg-none position-fixed"><a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        <!-- Core theme JS-->
+        <script src="script.js"></script>
+    </body>
+</html>
